@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="vertical"
-        android:background="@drawable/rounded3"
+        android:background="@color/colorAccent"
         >
 
 
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/chewy"
+            android:fontFamily="@font/happy_monkey"
             android:text="Value"
             android:layout_gravity="center"
             android:id="@+id/tv_tanggal_value"

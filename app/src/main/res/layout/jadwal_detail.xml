@@ -32,11 +32,11 @@
         android:id="@+id/tv_value1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Value"
         android:layout_gravity="center"
-        android:textSize="10pt"
+        android:fontFamily="@font/happy_monkey"
+        android:text="Value"
         android:textColor="@color/colorPrimaryDark"
-        />
+        android:textSize="10pt" />
 
 
     <TextView
@@ -55,6 +55,7 @@
         android:id="@+id/tv_value2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/happy_monkey"
         android:text="Value"
         android:layout_gravity="center"
         android:textSize="10pt"
@@ -77,6 +78,7 @@
         android:id="@+id/tv_value3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/happy_monkey"
         android:text="Value"
         android:layout_gravity="center"
         android:textSize="10pt"
@@ -99,6 +101,7 @@
         android:id="@+id/tv_value4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/happy_monkey"
         android:text="Value"
         android:layout_gravity="center"
         android:textSize="10pt"
@@ -121,6 +124,7 @@
         android:id="@+id/tv_value5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/happy_monkey"
         android:text="Value"
         android:layout_gravity="center"
         android:textSize="10pt"
@@ -144,6 +148,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:fontFamily="@font/happy_monkey"
         android:text="Value"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="10pt" />

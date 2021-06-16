@@ -17,7 +17,7 @@
         android:gravity="center"
         android:textColor="#fff"
         android:textSize="10pt"
-        android:background="@drawable/rounded3"
+        android:background="@drawable/rounded"
         android:layout_margin="5dp"
         >
 
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_gravity="center"
-        android:background="@drawable/rounded3"
+        android:background="@drawable/rounded"
         android:textColor="#fff"
         android:fontFamily="@font/chewy"
         android:text="simpan" />
