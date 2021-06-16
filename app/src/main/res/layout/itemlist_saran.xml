@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemlist_saran_tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:text="Nama anda"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/itemlist_saran_tv_saran"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Kritik dan Saran anda"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="7pt" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
