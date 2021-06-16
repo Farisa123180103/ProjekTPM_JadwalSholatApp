@@ -26,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/chewy"
             android:text="Tanggal"
             android:layout_gravity="center"
             android:textStyle="bold"
@@ -37,6 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/chewy"
             android:text="Value"
             android:layout_gravity="center"
             android:id="@+id/tv_tanggal_value"
