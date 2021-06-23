@@ -9,47 +9,45 @@ import com.example.jadwalsholat.R;
 import com.example.jadwalsholat.model.jadwal.Timings;
 
 public class JadwalSholatDetail extends AppCompatActivity {
-    public static final String Extra_Jadwal="";
-    private Timings TimingsItem;
-    private TextView tvFajr, tvDhuhr, tvAsr, tvMaghrib,tvIsha,tvImsak;
-
+    TextView imsak, subuh, terbit, duhur, asar, magrib, isya, tgl;
+    String getImsak, getSubuh, getTerbit, getDuhur, getAsar, getMagrib, getIsya;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.jadwal_detail);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        tvFajr = findViewById(R.id.tv_value1);
-        tvDhuhr = findViewById(R.id.tv_value2);
-        tvAsr = findViewById(R.id.tv_value3);
-        tvMaghrib = findViewById(R.id.tv_value4);
-        tvIsha = findViewById(R.id.tv_value5);
-        tvImsak = findViewById(R.id.tv_value6);
+        imsak = findViewById(R.id.tv_jam_imsak);
+        subuh = findViewById(R.id.tv_jam_subuh);
+        terbit = findViewById(R.id.tv_jam_terbit);
+        duhur = findViewById(R.id.tv_jam_dhuhur);
+        asar = findViewById(R.id.tv_jam_asar);
+        magrib = findViewById(R.id.tv_jam_magrib);
+        isya = findViewById(R.id.tv_jam_isya);
 
-        getIncomingIntent();
+        getImsak = getIntent().getExtras().getString("imsak");
+        getSubuh = getIntent().getExtras().getString("subuh");
+        getTerbit = getIntent().getExtras().getString("terbit");
+        getDuhur = getIntent().getExtras().getString("duhur");
+        getAsar = getIntent().getExtras().getString("asar");
+        getMagrib = getIntent().getExtras().getString("magrib");
+        getIsya = getIntent().getExtras().getString("isya");
+
+//        getImsak = getIntent().getStringExtra("imsak");
+//        getSubuh = getIntent().getStringExtra("subuh");
+//        getTerbit = getIntent().getStringExtra("terbit");
+//        getDuhur = getIntent().getStringExtra("duhur");
+//        getAsar = getIntent().getStringExtra("asar");
+//        getMagrib = getIntent().getStringExtra("magrib");
+//        getIsya = getIntent().getStringExtra("isya");
+
+        imsak.setText(getImsak);
+        subuh.setText(getSubuh);
+        terbit.setText(getTerbit);
+        duhur.setText(getDuhur);
+        asar.setText(getAsar);
+        magrib.setText(getMagrib);
+        isya.setText(getIsya);
+
     }
-
-
-    private void getIncomingIntent() {
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            String getTvFajr = bundle.getString("tvFajr");
-            String getTvDhuhr = bundle.getString("tvDhuhr");
-            String getTvAsr = bundle.getString("tvAsr");
-            String getTvMaghrib = bundle.getString("tvMaghrib");
-            String getTvIsha = bundle.getString("tvIsha");
-            String getTvImsak = bundle.getString("tvImsak");
-
-            tvFajr.setText(getTvFajr);
-            tvDhuhr.setText(getTvDhuhr);
-            tvAsr.setText(getTvAsr);
-            tvMaghrib.setText(getTvMaghrib);
-            tvIsha.setText(getTvIsha);
-            tvImsak.setText(getTvImsak);
-        }
-
-    }
-
-
 }

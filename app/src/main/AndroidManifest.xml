@@ -23,20 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.jadwalsholat.view.activity.MenuActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-            </intent-filter>
-        </activity>
         <activity android:name="com.example.jadwalsholat.view.activity.MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             ></activity>
         <activity android:name="com.example.jadwalsholat.view.activity.JadwalSholatDetail"></activity>
-        <activity android:name="com.example.jadwalsholat.view.activity.KritikActivity"></activity>
-        <activity android:name="com.example.jadwalsholat.view.activity.ReadKritikActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            ></activity>
 
         <meta-data
             android:name="preloaded_fonts"

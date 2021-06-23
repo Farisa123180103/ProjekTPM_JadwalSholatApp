@@ -1,52 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:orientation="vertical"
-    android:layout_marginLeft="50dp"
-    android:layout_marginRight="50dp"
-    android:layout_marginBottom="10dp"
-    android:layout_marginTop="10dp"
-    android:background="@drawable/rounded"
-    >
+    android:id="@+id/cv_saran"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="#BDB76B"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp">
 
+<!--    android:orientation="vertical"-->
+<!--    android:layout_marginLeft="50dp"-->
+<!--    android:layout_marginRight="50dp"-->
+<!--    android:layout_marginBottom="10dp"-->
+<!--    android:layout_marginTop="10dp"-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:fontFamily="@font/chewy"
+                android:text="Pengirim   :  "
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/itemlist_saran_tv_nama"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:textColor="#fff"
+                android:textColor="@color/black"
                 android:fontFamily="@font/chewy"
                 android:text="Nama anda"
-                android:textSize="7pt" />
-
-            <TextView
-                android:id="@+id/itemlist_saran_tv_saran"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:fontFamily="@font/chewy"
-                android:text="Kritik dan Saran anda"
-                android:gravity="center"
-                android:textColor="#fff"
-                android:textSize="7pt" />
-
+                android:textSize="20dp" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemlist_saran_tv_saran"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/chewy"
+            android:text="Kritik dan Saran anda"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
     </LinearLayout>
 
-</LinearLayout>
+</androidx.cardview.widget.CardView>

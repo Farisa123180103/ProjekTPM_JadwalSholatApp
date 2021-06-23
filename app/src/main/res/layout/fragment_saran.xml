@@ -4,44 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".view.fragment.SaranFragment"
     android:orientation="vertical"
-    android:background="@drawable/bc2"
+    android:background="@drawable/mosque"
     >
-
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:fontFamily="@font/chewy"
+        android:layout_height="80dp"
+        android:fontFamily="@font/happy_monkey"
+        android:textStyle="bold"
         android:text="Kritik dan Saran"
         android:gravity="center"
-        android:textColor="#fff"
-        android:textSize="10pt"
-        android:background="@drawable/rounded"
-        android:layout_margin="5dp"
-        >
-
-    </TextView>
-
+        android:background="@drawable/rounded2"
+        android:textColor="@color/black"
+        android:textSize="12pt"
+        android:layout_margin="5dp"/>
 
     <EditText
         android:id="@+id/activitykritik_et_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_margin="6dp"
         android:fontFamily="@font/chewy"
+        android:textStyle="bold"
         android:hint="Nama" />
 
     <EditText
         android:id="@+id/activitykritik_et_saran"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="10dp"
+        android:layout_margin="6dp"
         android:fontFamily="@font/chewy"
+        android:textStyle="bold"
         android:hint="kritik dan saran" />
-
 
     <Button
         android:id="@+id/activitykritik_btn_simpan"
@@ -50,27 +45,23 @@
         android:layout_marginTop="8dp"
         android:layout_gravity="center"
         android:background="@drawable/rounded"
-        android:textColor="#fff"
-        android:fontFamily="@font/chewy"
+        android:textColor="@color/black"
+        android:fontFamily="@font/happy_monkey"
+        android:textStyle="bold"
         android:text="simpan" />
-    <Button
-        android:id="@+id/activitykritik_btn_lihatdata"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:textColor="#fff"
-        android:background="@drawable/rounded3"
-        android:fontFamily="@font/chewy"
-        android:text="lihat_data" />
 
-    <TextView
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#787776"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_saran"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000"
-        android:layout_marginTop="350dp"
-        >
-
-    </TextView>
+        tools:listitem="@layout/itemlist_saran" />
 
 </LinearLayout>

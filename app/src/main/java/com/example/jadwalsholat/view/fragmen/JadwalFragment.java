@@ -50,7 +50,7 @@ public class JadwalFragment extends Fragment {
         jadwalSholatAdapter = new JadwalSholatAdapter(getContext());
         jadwalSholatAdapter.notifyDataSetChanged();
 
-        rvJadwalSholat = view.findViewById(R.id.fragmentjadwal_rv);
+        rvJadwalSholat = view.findViewById(R.id.rc);
         rvJadwalSholat.setLayoutManager(new GridLayoutManager(getContext(),2));
 
         jadwalViewModel = new ViewModelProvider(this).get(JadwalViewModel.class);

@@ -1,156 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="350dp"
-    android:layout_height="600dp"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="view.activity.JadwalSholatDetail"
-    android:layout_marginTop="20dp"
-    android:layout_marginHorizontal="10dp"
-    android:layout_gravity="center"
-    android:background="@drawable/rounded"
-    app:layout_constraintCircleRadius="20dp">
+    android:padding="15dp"
+    android:background="@drawable/mosque">
 
-
-
-    <TextView
-
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:fontFamily="@font/chewy"
-        android:text="Subuh"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textSize="10pt"
+        app:cardBackgroundColor="@color/brown"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
 
-        android:textColor="@color/colorPrimaryDark"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
 
-    <TextView
-        android:id="@+id/tv_value1"
-        android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_imsak"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:text="IMSAK"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_jam_imsak"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:text="04.15"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/happy_monkey"
-        android:text="Value"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="10pt" />
+        app:cardBackgroundColor="@color/brown"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_subuh"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:text="SUBUH"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_jam_subuh"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:text="04.15"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/chewy"
-        android:text="Dzuhur"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+        app:cardBackgroundColor="@color/brown"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
 
-    <TextView
-        android:id="@+id/tv_value2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/happy_monkey"
-        android:text="Value"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/chewy"
-        android:text="Ashar"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_terbit"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:text="TERBIT"/>
 
-    <TextView
-        android:id="@+id/tv_value3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/happy_monkey"
-        android:text="Value"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_jam_terbit"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:text="04.15"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/chewy"
-        android:text="Maghrib"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/tv_value4"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/happy_monkey"
-        android:text="Value"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+        app:cardBackgroundColor="@color/brown"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/chewy"
-        android:text="Isha"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
 
-    <TextView
-        android:id="@+id/tv_value5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/happy_monkey"
-        android:text="Value"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_dhuhur"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:text="DZUHUR"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/chewy"
-        android:text="Imsak"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textSize="10pt"
-        android:textColor="@color/colorPrimaryDark"
-        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_jam_dhuhur"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:text="04.15"/>
 
-    <TextView
-        android:id="@+id/tv_value6"
-        android:layout_width="wrap_content"
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/happy_monkey"
-        android:text="Value"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="10pt" />
+        app:cardBackgroundColor="@color/brown"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_asar"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:text="ASHAR"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_jam_asar"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:text="04.15"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/brown"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_magrib"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:text="MAGHRIB"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_jam_magrib"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:text="04.15"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/brown"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_isya"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:text="ISYA"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:id="@+id/tv_jam_isya"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:text="04.15"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

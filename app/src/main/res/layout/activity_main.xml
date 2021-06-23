@@ -6,18 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".view.activity.MainActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="8dp"
-        android:fontFamily="@font/chewy"
-        android:text="Jadwal Sholat Sukoharjo"
-        android:textSize="10pt"
-        android:textAlignment="center"
-        android:background="@drawable/rounded"
-        >
 
-    </TextView>
     <FrameLayout
         android:id="@+id/activitymain_fragmentcontainer"
         android:layout_width="match_parent"
@@ -31,7 +20,7 @@
         android:id="@+id/menu_utama_bottomnav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00BFFF"
+        android:background="@color/black"
         app:itemIconTint="#FFFAF0"
         app:itemTextColor="#FFFAF0"
         app:menu="@menu/menu_bottomnav" />

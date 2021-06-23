@@ -3,12 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragmen.JadwalFragment">
+    android:orientation="vertical"
+    tools:context=".view.fragment.JadwalFragment"
+    android:background="@drawable/mosque">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:fontFamily="@font/happy_monkey"
+        android:textStyle="bold"
+        android:text="Jadwal Sholat Wilayah Lampung"
+        android:gravity="center"
+        android:background="@drawable/rounded2"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:layout_margin="5dp"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fragmentjadwal_rv"
+        android:id="@+id/rc"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_list" />
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/jadwal_solat">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

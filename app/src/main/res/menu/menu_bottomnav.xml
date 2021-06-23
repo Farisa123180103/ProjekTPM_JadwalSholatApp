@@ -9,16 +9,16 @@
         android:title="Jadwal Sholat"
         android:icon="@drawable/sholat"
         app:showAsAction="ifRoom"
-        android:iconTint="#FFFAF0"
+        android:iconTint="#FF000000"
 
 
         />
 
     <item
-        android:id="@+id/menu_buttomnav_alarm"
-        android:title="Alarm Sholat"
-        android:icon="@drawable/alarm"
-        android:iconTint="#FFFAF0"
+        android:id="@+id/menu_buttomnav_saran"
+        android:title="Kritik dan Saran"
+        android:icon="@drawable/note"
+        android:iconTint="#FF000000"
         app:showAsAction="ifRoom"/>
 
 

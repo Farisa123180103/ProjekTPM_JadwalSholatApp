@@ -17,68 +17,63 @@ import com.example.jadwalsholat.view.activity.JadwalSholatDetail;
 
 import java.util.ArrayList;
 
-public class JadwalSholatAdapter extends RecyclerView.Adapter<JadwalSholatAdapter.viewHolder> {
+public class JadwalSholatAdapter extends RecyclerView.Adapter<JadwalSholatAdapter.ViewHolder>{
 
-    private ArrayList<DataItem> data = new ArrayList<>();
+    private ArrayList<DataItem> dataItems = new ArrayList<>();
     private Context context;
-
 
     public JadwalSholatAdapter(Context context) {
         this.context = context;
     }
 
     public void setData(ArrayList<DataItem> items){
-        data.clear();
-        data.addAll(items);
+        dataItems.clear();
+        dataItems.addAll(items);
         notifyDataSetChanged();
-
     }
-
 
     @NonNull
     @Override
-    public JadwalSholatAdapter.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list,parent,false);
+    public JadwalSholatAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.jadwal_solat,parent,false);
 
-        return new viewHolder(view);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull JadwalSholatAdapter.viewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull JadwalSholatAdapter.ViewHolder holder, int position) {
+        holder.tgl.setText(dataItems.get(position).getDate().getReadable());
 
-        holder.tv_tanggal_value.setText(data.get(position).getDate().getReadable());
-        CardView cardView = holder.cv_item;
-
-        cardView.setOnClickListener(new View.OnClickListener() {
+        holder.cv_tgl.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View v) {
                 Intent intent = new Intent(context, JadwalSholatDetail.class);
 
-                intent.putExtra("tvFajr", data.get(position).getTimings().getFajr());
-                intent.putExtra("tvDhuhr",data.get(position).getTimings().getDhuhr());
-                intent.putExtra("tvAsr",data.get(position).getTimings().getAsr());
-                intent.putExtra("tvMaghrib",data.get(position).getTimings().getMaghrib());
-                intent.putExtra("tvIsha",data.get(position).getTimings().getIsha());
-                intent.putExtra("tvImsak",data.get(position).getTimings().getImsak());
+                intent.putExtra("terbit", dataItems.get(position).getTimings().getSunrise());
+                intent.putExtra("imsak", dataItems.get(position).getTimings().getImsak());
+                intent.putExtra("subuh", dataItems.get(position).getTimings().getFajr());
+                intent.putExtra("duhur", dataItems.get(position).getTimings().getDhuhr());
+                intent.putExtra("asar", dataItems.get(position).getTimings().getAsr());
+                intent.putExtra("magrib", dataItems.get(position).getTimings().getMaghrib());
+                intent.putExtra("isya", dataItems.get(position).getTimings().getIsha());
                 context.startActivity(intent);
             }
         });
     }
 
     @Override
-    public int getItemCount() { return data.size(); }
+    public int getItemCount() {
+        return dataItems.size();
+    }
 
-
-
-    public class viewHolder extends RecyclerView.ViewHolder {
-
-        TextView   tv_tanggal_value;
-        CardView cv_item;
-        public viewHolder(@NonNull View itemView) {
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView tgl;
+        CardView cv_tgl;
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            cv_item = itemView.findViewById(R.id.itemlist_cv);
-            tv_tanggal_value= itemView.findViewById(R.id.tv_tanggal_value);
+            cv_tgl = itemView.findViewById(R.id.cv);
+            tgl = itemView.findViewById(R.id.tv_tgl);
+
         }
     }
 }
