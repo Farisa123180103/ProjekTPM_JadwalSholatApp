@@ -9,8 +9,8 @@ import com.example.jadwalsholat.R;
 import com.example.jadwalsholat.model.jadwal.Timings;
 
 public class JadwalSholatDetail extends AppCompatActivity {
-    TextView imsak, subuh, terbit, duhur, asar, magrib, isya, tgl;
-    String getImsak, getSubuh, getTerbit, getDuhur, getAsar, getMagrib, getIsya;
+    TextView imsak, subuh, terbit, duhur, asar, magrib, isya, tgl, hijriah;
+    String getImsak, getSubuh, getTerbit, getDuhur, getAsar, getMagrib, getIsya, getTgl, getHijriah;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,6 +24,8 @@ public class JadwalSholatDetail extends AppCompatActivity {
         asar = findViewById(R.id.tv_jam_asar);
         magrib = findViewById(R.id.tv_jam_magrib);
         isya = findViewById(R.id.tv_jam_isya);
+        tgl = findViewById(R.id.tv_tgl1);
+        hijriah = findViewById(R.id.tv_hijriah);
 
         getImsak = getIntent().getExtras().getString("imsak");
         getSubuh = getIntent().getExtras().getString("subuh");
@@ -32,6 +34,8 @@ public class JadwalSholatDetail extends AppCompatActivity {
         getAsar = getIntent().getExtras().getString("asar");
         getMagrib = getIntent().getExtras().getString("magrib");
         getIsya = getIntent().getExtras().getString("isya");
+        getTgl = getIntent().getExtras().getString("tgl");
+        getHijriah = getIntent().getExtras().getString("hijriah");
 
 //        getImsak = getIntent().getStringExtra("imsak");
 //        getSubuh = getIntent().getStringExtra("subuh");
@@ -48,6 +52,8 @@ public class JadwalSholatDetail extends AppCompatActivity {
         asar.setText(getAsar);
         magrib.setText(getMagrib);
         isya.setText(getIsya);
+        tgl.setText(getTgl);
+        hijriah.setText(getHijriah);
 
     }
 }

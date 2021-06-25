@@ -10,6 +10,59 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        app:cardBackgroundColor="#BDB76B"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:fontFamily="@font/happy_monkey"
+                android:textStyle="bold"
+                android:text="Jadwal Sholat Wilayah Lampung"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="10pt"
+                android:layout_margin="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/chewy"
+                    android:id="@+id/tv_hijriah"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp"
+                    android:text="14 DzulKaidah 1442 H"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/chewy"
+                    android:id="@+id/tv_tgl1"
+                    android:gravity="right"
+                    android:textSize="18dp"
+                    android:paddingRight="10dp"
+                    android:text="01 Jun 2021"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/brown"
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="8dp">

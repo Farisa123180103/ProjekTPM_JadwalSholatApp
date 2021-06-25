@@ -56,6 +56,9 @@ public class JadwalSholatAdapter extends RecyclerView.Adapter<JadwalSholatAdapte
                 intent.putExtra("asar", dataItems.get(position).getTimings().getAsr());
                 intent.putExtra("magrib", dataItems.get(position).getTimings().getMaghrib());
                 intent.putExtra("isya", dataItems.get(position).getTimings().getIsha());
+                intent.putExtra("tgl", dataItems.get(position).getDate().getReadable());
+                intent.putExtra("hijriah", dataItems.get(position).getDate().getHijri().getDate());
+
                 context.startActivity(intent);
             }
         });

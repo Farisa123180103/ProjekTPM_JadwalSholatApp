@@ -49,7 +49,7 @@ public class SaranFragment extends Fragment {
 
         submit = view.findViewById(R.id.activitykritik_btn_simpan);
         etNama = view.findViewById(R.id.activitykritik_et_nama);
-        etSaran = view.findViewById(R.id.activitykritik_et_nama);
+        etSaran = view.findViewById(R.id.activitykritik_et_saran);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
